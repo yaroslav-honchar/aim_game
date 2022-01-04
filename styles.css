@@ -101,7 +101,7 @@ h1 {
   cursor: pointer;
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 400px) {
   .board{
     width: 300px;
     height: 500px;
