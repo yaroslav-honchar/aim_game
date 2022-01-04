@@ -103,7 +103,7 @@ h1 {
 
 @media screen and (max-width: 400px) {
   .board{
-    width: 300px;
+    width: 250px;
     height: 500px;
   }
 }
