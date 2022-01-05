@@ -19,7 +19,7 @@ timeBtns.addEventListener('click', e => {
 })
 
 board.addEventListener('click', e => {
-    if (e.target.classList.contains('circle')){
+    if (e.target.classList.contains('circle')) {
         score++
         e.target.remove()
         createRandomCircle()
@@ -30,6 +30,7 @@ function startGame() {
     setInterval(decreaseTime, 1000)
     screen[1].classList.add('up')
     setTime(time)
+    createRandomCircle()
 }
 
 function decreaseTime() {
@@ -50,12 +51,12 @@ function setTime(value) {
 
 function finishGame() {
     timeEl.parentNode.classList.add('hide')
-    board.innerHTML = `<h1>Счет: <span class="primary">${score}</span></h1>`
+    board.innerHTML = `<h1>Счет: <span class="primary">${score}</span> </h1>`
 }
 
 function createRandomCircle() {
     const circle = document.createElement('div')
-    const  size = getRandomNumber(15, 45)
+    const size = getRandomNumber(15, 45)
     const {width, height} = board.getBoundingClientRect()
     const x = getRandomNumber(0, width - size)
     const y = getRandomNumber(0, height - size)
@@ -68,7 +69,8 @@ function createRandomCircle() {
 
     board.append(circle)
 }
-createRandomCircle()
+
+
 function getRandomNumber(min, max) {
     return Math.round(Math.random() * (max - min) + min)
 }
