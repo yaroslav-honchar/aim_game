@@ -13,12 +13,15 @@ body {
   text-align: center;
 }
 
-a {
+button {
   color: #fff;
+  background: initial;
+  border: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
-a:hover {
+button:hover {
   color: #16d9e3;
 }
 
