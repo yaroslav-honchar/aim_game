@@ -1,4 +1,4 @@
-[Wath preview](https://honcaharoyara.github.io/aim_game/index.html)
+[Wath preview](https://yaroslav-honchar.github.io/aim_game/index.html)
 
 Hello everyone;)
 
